@@ -28,6 +28,6 @@ const option = {
 captionDelay: 250,
 }
 
-const bigImg = new SimpleLightbox('.gallery a', option);
+new SimpleLightbox('.gallery a', option);
 
 
