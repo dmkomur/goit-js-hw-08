@@ -5,7 +5,7 @@ const formRef = document.querySelector('.feedback-form');
 
 if (localStorage.getItem("feedback-form-state")) {
     const savedInputs = storeService.load("feedback-form-state")
-     for (input in savedInputs) {
+     for (const input in savedInputs) {
         if (savedInputs[input]) {
             formRef[input].value = savedInputs[input];
         }
